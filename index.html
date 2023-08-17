@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Fasthand&family=Hanken+Grotesk:wght@500;700;800&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/dist/style.css">
+  <title>Home | Furniture</title>
+</head>
+<body>
+  <div class="home">
+    <main class="home__main">
+      <nav class="desktop flex center">
+        <img class="menuIcon" src="/assets/images/icon-hamburger.svg" alt="">
+        <a href="#" class="logo">
+          <img src="/assets/images/logo.svg" alt="">
+        </a>
+        <ul class="menu flex">
+          <li><a href="#">home</a></li>
+          <li><a href="#">shop</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+      <div class="mask"></div>
+      <div class="mobile">
+        <button class="closeIcon">
+          <img src="/assets/images/icon-close.svg" alt="">
+        </button>
+        <ul class="mobile-menu flex">
+          <li><a href="#">home</a></li>
+          <li><a href="#">shop</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
+    </main>
+    <aside class="home__sidebar flex sb">
+      <div>
+        <div class="text">
+          <h1>Discover innovative ways to decorate</h1>
+          <p> 
+            We provide unmatched quality, comfort, and style for property owners across the country. 
+            Our experts combine form and function in bringing your vision to life. Create a room in your 
+            own style with our collection and make your property a reflection of you and what you love.
+          </p>
+        </div>
+        <button class="btn">Shop now
+          <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+            <path class="btn" d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/>
+          </svg>
+        </button>
+      </div>
+      <div class="navigate">
+        <button class="navigate__arrow">
+          <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd"/>
+          </svg>
+        </button>
+        <button class="navigate__arrow">
+          <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd"/>
+          </svg>
+        </button>
+      </div>
+    </aside>
+  </div>
+  <div class="about flex">
+    <div class="about__img">
+      <img src="/assets/images/image-about-dark.jpg" alt="">
+    </div>
+    <div class="about__text">
+      <h4>About our furniture</h4>
+      <p>
+        Our multifunctional collection blends design and function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+        or anything in between. Product specialists are available to help you create your dream space.
+      </p>
+    </div>
+    <div class="about__img">
+      <img src="/assets/images/image-about-light.jpg" alt="">
+    </div>
+  </div>
+  <script src="/assets/js/index.js"></script>
+</body>
+</html>

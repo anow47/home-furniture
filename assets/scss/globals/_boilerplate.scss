@@ -1,0 +1,37 @@
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+    min-height: 100vh;
+}
+p{
+    color: var(--Dark-Gray);
+    font-size: 12px;
+    line-height: 1.1;
+}
+.flex{
+    display: flex;
+}
+.center{
+    align-items: center;
+}
+.space{
+    justify-content: center;
+}
+.sb{
+    justify-content: space-between;
+}
+li,
+.logo,
+.btn,
+.navigate__arrow
+{
+    cursor: pointer;
+}

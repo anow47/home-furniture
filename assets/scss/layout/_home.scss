@@ -1,0 +1,149 @@
+.home{
+    display: grid;
+    grid-template-columns: 2fr 1.3fr;
+    height: calc(100vh - 200px);
+
+    @media (max-width: 1200px){
+        grid-template-columns: 1fr;
+        // height: 100vh;
+
+        &__main{
+            height: 400px;
+
+            .menuIcon{
+                position: absolute;
+                left: 5%;
+                top: 5%;
+
+            }
+            .logo{
+                position: absolute;
+                right: 50%;
+                top: 5%;
+            }
+            .menu{
+                display: none;
+            }
+            .desktop{
+                width: 50%;
+                justify-content: space-between;
+            }
+        }
+        .navigate{
+            position: absolute;
+            top: 320px;
+            right: 0;
+        }
+    }
+    @media (min-width: 1200px){
+        .menuIcon, .mobile{
+            display: none;
+        }
+    }
+
+    &__main{
+        background-image: url('/assets/images/desktop-image-hero-1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .desktop{
+        padding: 30px 60px;
+
+        li a{
+            color: var(--White);
+            margin: 1rem;
+            
+            &:hover{
+                border-bottom: 2px solid var(--White);
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+    .mask{
+        display: none;
+        position: fixed;
+        min-width: 100%;
+        min-height: 100vh;
+        background-color: rgb(0, 0, 0, 0.5);
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .mobile{
+        display: none;
+        position: absolute;
+        width: 100%;
+        justify-content: space-between;
+        background-color: var(--White);
+        padding: 50px;
+        top: 0;
+        z-index: 2;
+
+        .closeIcon{
+            border: none;
+            background-color: transparent;
+        }
+        .mobile-menu{
+            li a{
+                color: var(--Black);
+                margin: 2rem;
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+        }
+    }
+    &__sidebar{
+        flex-direction: column;
+
+        .text{
+            margin: 2rem 5rem 0 5rem;
+        }
+        p{
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 1.6;
+            height: 100px;
+        }
+        h1{
+            padding-top: 3rem;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .btn{
+            border: none;
+            background-color: transparent;
+            color: var(--Black);
+            font-weight: 700;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            fill: inherit;
+            width: 64%;
+
+            &:hover{
+                color: var(--Dark-Gray);
+                fill: var(--Dark-Gray);
+            }
+        }
+        .navigate{
+            padding-left: 2px;
+
+            @media (max-width: 1200px){
+                position: absolute;
+            }
+
+            &__arrow{
+                padding: 26px;
+                border: none;
+                background-color: var(--Black);
+                margin-right: -2px;
+                margin-left: -2px;
+
+                &:hover{
+                    background-color: var(--Dark-Gray);
+                }
+            }
+        }
+    }
+}
