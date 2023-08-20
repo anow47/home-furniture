@@ -4,12 +4,14 @@
 
         @media (max-width: 1200px){
             display: block;
-            padding-top: 200px;
+            justify-content: center;
+            padding-top: 100px;
+
 
             &__text{
                 padding: 2rem;
                 text-align: center;
-                width: 420px;
+                // width: 420px;
             }
         }
 
