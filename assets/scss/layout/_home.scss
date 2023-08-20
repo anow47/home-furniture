@@ -82,9 +82,9 @@
     .mobile{
         display: none;
         position: absolute;
-        width: 100%;
+        min-width: 100%;
         background-color: var(--White);
-        padding: 50px;
+        padding: 50px 10px;
         top: 0;
         z-index: 2;
 
@@ -93,12 +93,14 @@
             background-color: transparent;
         }
         .mobile-menu{
+            padding: 0;
 
             li a{
                 color: var(--Black);
                 padding-left: 2rem;
                 font-weight: 700;
                 font-size: 20px;
+
             }
 
         }
